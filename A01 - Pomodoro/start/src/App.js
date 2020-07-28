@@ -17,18 +17,20 @@ function resetTimer(){
   setTimeLeft(25 * 60);
 }
   function startTimer(){
+    // if (intervalRef.current!==null)return;
     setTitle(`You're  doing great!`)
   intervalRef.current =  setInterval(()=>{
       setTimeLeft(timeLeft=>{
         
         if (timeLeft>=1) return timeLeft-1;
-
+resetTimer()
         return 0;
       });
   },1000);
   
 }
 function stopTimer (){
+  if(intervalRef == null)return;
   clearInterval(intervalRef.current)
   setTitle('Keep it up!');
 }
