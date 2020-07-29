@@ -17,7 +17,7 @@ function resetTimer(){
   setTimeLeft(25 * 60);
 }
   function startTimer(){
-    // if (intervalRef.current!==null)return;
+    if (intervalRef.current!==null)return;
     setTitle(`You're  doing great!`)
   intervalRef.current =  setInterval(()=>{
       setTimeLeft(timeLeft=>{
