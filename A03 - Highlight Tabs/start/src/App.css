@@ -90,3 +90,15 @@ body {
 /**
  * Add your highlight code here
  */
+ .highlight{
+   display:block;
+   position:absolute;
+   height:80px;
+   width:300px;
+   background:radial-gradient(rgba(157,128,138,1),rgba(255,255,255,1));
+   border-radius: 50%;
+   opacity:0.2;
+   top:-10px;
+   pointer-events: none;
+   transition:0.3s ease all;
+ }
